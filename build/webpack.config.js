@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const isDev = process.env.NODE_ENV === 'development'
 
 function resolveResource(name){
-  return Path.resolve(__dirname, '../src/assets/style/' + name)
+  return Path.resolve(__dirname, '../src/assets/style/scss/' + name)
 }
 
 let config = {
@@ -109,7 +109,7 @@ let config = {
     alias: {
       '@': Path.join(__dirname, '../src/')
     },
-    extensions: ['.js', '.vue', '.json', '.css', '.node']
+    extensions: ['.js', '.vue', '.json', '.css', '.scss', '.node']
   },
 }
 

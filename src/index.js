@@ -6,6 +6,7 @@ import router from './router'
 
 import 'element-ui/lib/theme-chalk/index.css';
 import './assets/style/test.css'
+import './assets/style/scss/main.scss'
 
 import guid from './util/uuid.js'
 import http from './util/http.js'
