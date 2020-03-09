@@ -1,57 +1,5 @@
-.i-menu{
-  position: relative;
-  box-sizing: border-box;
-  width: 2em;
-  height: 2em;
-  @include bd-radius(.3em)
-  background-color: $i-bgc;
-  &:before{
-    @include p-abs;
-    margin: auto;
-    box-sizing: border-box;
-    width: 1.2em;
-    height: .15em;
-    content: "";
-    background-color: $i-fc;
-  }
-  &:after{
-    @include p-abs;
-    margin: auto;
-    box-sizing: border-box;
-    width: 1.2em;
-    height: .9em;
-    content: "";
-    border-width: .15em;
-    border-style: solid none;
-    border-color: $i-fc;
-  }
-}
-
-.i-more {
-  position: relative;
-  box-sizing: border-box;
-  width: 2em;
-  height: 2em;
-  @include hide;
-  &:before{
-    box-sizing: border-box;
-    content: "";
-    @include p-abs(0.75em, .5em)
-    width: .5em;
-    height: .5em;
-    background-color: $i-bgc;
-    border-radius:50%;
-  }
-  &:after{
-    box-sizing:border-box;
-    content:"";
-    @include p-abs(0.75em, 1.25em)
-    width: 1.5em;
-    height:.5em;
-    background-color:$i-bgc;
-    @include bd-radius(.75em)
-  }
-}
+@import "./icon/menu";
+@import "./icon/more";
 
 .menu2 {
 	box-sizing:border-box;

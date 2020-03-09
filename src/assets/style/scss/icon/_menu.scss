@@ -1,0 +1,28 @@
+.i-menu{
+  position: relative;
+  box-sizing: border-box;
+  width: 2em;
+  height: 2em;
+  @include bd-radius(.3em);
+  background-color: $icon-bgc;
+  &:before{
+    @include abs;
+    margin: auto;
+    box-sizing: border-box;
+    width: 1.2em;
+    height: .15em;
+    content: "";
+    background-color: $icon-fc;
+  }
+  &:after{
+    @include abs;
+    margin: auto;
+    box-sizing: border-box;
+    width: 1.2em;
+    height: .9em;
+    content: "";
+    border-width: .15em;
+    border-style: solid none;
+    border-color: $icon-fc;
+  }
+}

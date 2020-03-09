@@ -1,0 +1,23 @@
+.i-more {
+  position: relative;
+  box-sizing: border-box;
+  width: 2em;
+  height: 2em;
+  @include hide;
+  font-family: Microsoft Yahei;
+  &:before{
+    @include abs(.75em, 0, 0, 0.8em);
+    box-sizing: border-box;
+    content: "o";
+    font-size: .8em;
+  }
+  &:after {
+    @include abs(.75em);
+    box-sizing: border-box;
+    content:"oo";
+    font-size: .8em;
+    letter-spacing: .6em;
+    text-indent: .2em;
+  }
+  border:1px solid red;
+}
