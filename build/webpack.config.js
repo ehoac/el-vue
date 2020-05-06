@@ -60,9 +60,7 @@ let config = {
           options: {
             sourceMap: true,
             resources: [
-              resolveResource('main.scss'),
-              resolveResource('mixins.scss'),
-              resolveResource('variable.scss')
+              resolveResource('main.scss')
             ]
           }
         }
@@ -109,13 +107,13 @@ let config = {
     alias: {
       '@': Path.join(__dirname, '../src/')
     },
-    extensions: ['.js', '.vue', '.json', '.css', '.scss', '.node']
+    extensions: ['.js', '.vue', '.json', '.css', '.node']
   },
 }
 
 if (isDev) {
   config.devServer = {
-    port: 20001,
+    port: 8123,
     host: '0.0.0.0',
     overlay: {
       errors: true
